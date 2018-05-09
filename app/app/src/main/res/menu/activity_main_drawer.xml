@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_comInfo"
+            android:icon="@drawable/com"
+            android:title="컴퓨터 상태"/>
+        <item
+            android:id="@+id/nav_cpuInfo"
+            android:icon="@drawable/cpu"
+            android:title="CPU 상태"/>
+        <item
+            android:id="@+id/nav_memInfo"
+            android:icon="@drawable/disk"
+            android:title="저장소 상태"/>
+    </group>
+
+</menu>

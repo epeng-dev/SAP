@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="dsm.com.systemalarm.fragment.ComInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="8dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="CPU 사용량"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/fragment_com_info_cpu_usage"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:text="100%"
+                        android:textSize="40sp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="8dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="RAM 사용량"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/fragment_com_info_ram_usage"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:text="100%"
+                        android:textSize="40sp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
